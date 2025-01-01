@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { AiOutlineGlobal, AiOutlineShoppingCart } from "react-icons/ai";
 import { MdWeb,MdSupport } from "react-icons/md";
 import { FiServer } from "react-icons/fi"
 import Service from './Service';
 
 
-export default function Services() {
+export default forwardRef(function Services(_,ref) {
   return (
-    <section className='mb-10 md:mb-12 lg:mb-16 xl:mb-20'>
+    <section ref={ref} className='mb-10 md:mb-12 lg:mb-16 xl:mb-20'>
         <p className='text-center text-black dark:text-white text-2xl lg:text-3xl xl:text-4xl font-bold mb-4'>Services</p>
         <p className='text-center text-black dark:text-white  font-light lg:font-normal text-sm lg:text-base mb-6 lg:mb-8'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis itaque in alias cum repellat laboriosam doloribus esse quis amet animi.</p>
         <div className='flex flex-row justify-center flex-wrap gap-4'>
@@ -39,4 +39,4 @@ export default function Services() {
         </div>
     </section>
   )
-}
+})

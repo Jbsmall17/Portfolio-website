@@ -6,7 +6,7 @@ import { FaFacebook,FaXTwitter,FaInstagram,FaLinkedin } from "react-icons/fa6";
 
 export default function Hero() {
   return (
-    <section className='mb-6 md:mb-8 lg:mb-10 xl:mb-12 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-12 lg:gap-16 xl:gap-20'>
+    <section className='mt-8 sm:mt-10 lg:mt-12 xl:mt-16 mb-6 md:mb-8 lg:mb-10 xl:mb-12 flex flex-col md:flex-row items-center justify-between gap-10 md:gap-12 lg:gap-16 xl:gap-20'>
         <div className='flex-1 flex flex-col items-center md:items-start'>
             <p className='text-base text-center md:text-start lg:text-xl text-black dark:text-white font-semibold'>Hi I am <br /><span className='text-[#fd6f00]'>Alao Abdulmusawwir Ajibola</span></p>
             <p className='text-3xl lg:text-4xl xl:text-5xl text-black dark:text-white font-bold'>Fullstack</p>

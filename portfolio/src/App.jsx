@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -10,20 +10,25 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
-
+  const headerRef= useRef(null)
+  const aboutMeRef = useRef(null)
+  const serviceRef = useRef(null)
+  const projectRef = useRef(null)
+  const testimonialRef = useRef(null)
+  const contactRef = useRef(null)
   return (
-    <main className="bg-white dark:bg-[#1e1e1e]">
-      <Header />
+    <div className="bg-white dark:bg-[#1e1e1e]">
+      <Header ref={headerRef} aboutMeRef={aboutMeRef} serviceRef={serviceRef} projectRef={projectRef} testimonialRef={testimonialRef} contactRef={contactRef} />
       <main className='px-[5%]'>
       <Hero />
-      <About />
-      <Services />
-      <Projects />
-      <Testimonials />
-      <Contact />
+      <About ref={aboutMeRef} />
+      <Services ref={serviceRef} />
+      <Projects ref={projectRef} />
+      <Testimonials ref={testimonialRef} />
+      <Contact ref={contactRef} />
     </main>
-      <Footer />
-    </main>
+      <Footer aboutMeRef={aboutMeRef} serviceRef={serviceRef} projectRef={projectRef} testimonialRef={testimonialRef} contactRef={contactRef} />
+    </div>
   )
 }
 

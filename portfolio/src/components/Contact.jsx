@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { MdOutlineMail } from "react-icons/md";
 
 
-export default function Contact() {
+export default forwardRef(function Contact(_,ref) {
   return (
-    <section className='mb-10 md:mb-12 lg:mb-16 xl:mb-20'>
+    <section ref={ref} className='mb-10 md:mb-12 lg:mb-16 xl:mb-20'>
         <p className='text-center text-2xl lg:text-3xl xl:text-4xl text-black dark:text-white font-bold mb-4'>contact</p>
         <p className='text-center text-black dark:text-white font-light lg:font-normal text-sm lg:text-base mb-6 md:mb-8 lg:mb-12'>Get in Touch</p>
         <div className='flex justify-center'>
@@ -31,4 +31,4 @@ export default function Contact() {
         </div>
     </section>
   )
-}
+})

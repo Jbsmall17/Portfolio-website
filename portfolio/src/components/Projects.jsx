@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Project from './Project'
 import devlinks from "../assets/image/devlinks-preview.png"
 
-export default function Projects() {
+export default forwardRef (function Projects(_,ref) {
   return (
-    <section className='mb-10 md:mb-12 lg:mb-16 xl:mb-20'>
+    <section ref={ref} className='mb-10 md:mb-12 lg:mb-16 xl:mb-20'>
         <p className='text-center text-2xl lg:text-3xl xl:text-4xl text-black dark:text-white font-bold mb-4'>My Projects</p>
         <p className='text-center text-black dark:text-white font-light lg:font-normal text-sm lg:text-base mb-6 lg:mb-8'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo excepturi deserunt eligendi quae tempora dolores nisi aspernatur dicta velit et?</p>
         <ul className='flex flex-row flex-wrap justify-center items-center gap-4 mb-6 lg:mb-8 xl:mb-10'>
@@ -43,4 +43,4 @@ export default function Projects() {
         </div>
     </section>
   )
-}
+})

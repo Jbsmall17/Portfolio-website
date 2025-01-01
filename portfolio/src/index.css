@@ -10,6 +10,22 @@
   font-family: "Poppins", serif;
 }
 
+html{
+  scroll-padding-top: 54px;
+}
+
+@media screen and (min-width:768px) {
+  html{
+    scroll-padding-top: 74px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html{
+    scroll-padding-top: 90px;
+  }
+}
+
 ul.active{
   animation: moveDown 1s linear 1 forwards;
 }
@@ -34,4 +50,13 @@ ul.inactive{
   to {
     transform: translateY(-100%);
   }
+}
+
+header{
+  position: relative;
+}
+header.fixed{
+  position: fixed;
+  background-color: white;
+  border-bottom: 2px solid #fd6d00;
 }

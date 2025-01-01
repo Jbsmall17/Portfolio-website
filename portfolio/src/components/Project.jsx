@@ -11,8 +11,8 @@ export default function Project({image,name,desc,stack,sourceCode,liveServer}) {
       </div>
       <div className='bg-[#f8f8f8] rounded-bl-lg rounded-br-lg px-4 pt-2 pb-2'>
         <p className='mb-2 text-xl font-semibold text-[#fd6f00]'>{name}</p>
-         <p className='text-sm mb-2'>{desc}</p>
-        <div className='mb-6 flex flex-row justify-between flex-wrap'>
+        <p className='text-sm mb-2'>{desc}</p>
+        <div className='mb-6 flex flex-row justify-center gap-1 flex-wrap'>
             {
                 stack.map((tech,idx)=>{
                     return <div key={idx} className='bg-[#fd6f00] text-white text-sm py-1 px-2 rounded-full'>{tech}</div>

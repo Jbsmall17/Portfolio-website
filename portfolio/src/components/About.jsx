@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import circularBorder from "../assets/image/Ellipse4.png"
 import protrait1 from "../assets/image/protrait1.png"
 import Slider from '@mui/material/Slider'
@@ -68,9 +68,9 @@ const SkillSlider = styled(Slider)(({ theme }) => ({
   }));
 
 
-export default function About() {
+export default forwardRef (function About(_,ref) {
   return (
-    <section className='mb-10 md:mb-12 lg:mb-16 xl:mb-20 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-12 lg:gap-16 xl:gap-20'>
+    <section ref={ref} className='mb-10 md:mb-12 lg:mb-16 xl:mb-20 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-12 lg:gap-16 xl:gap-20'>
         <div className='w-[300px] lg:w-[400px] xl:w-[500px] h-[300px] lg:h-[400px] xl:h-[500px] rounded-full p-[4px] bg-gradient-to-b from-[#1A1A1A] to-[#fd6f00]'>
           <img className='w-full h-full rounded-full' src={protrait1} alt='protriat image' />
         </div>
@@ -118,4 +118,4 @@ export default function About() {
         </div>
     </section>
   )
-}
+})
