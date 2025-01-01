@@ -5,6 +5,14 @@ import { FaFacebook,FaXTwitter,FaInstagram,FaLinkedin } from "react-icons/fa6";
 
 export default function Footer({aboutMeRef,serviceRef,projectRef,testimonialRef,contactRef}) {
 
+    const scrollToSection = (section) => {
+        if(section.current){
+            section.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            })
+        }
+    }
 
   return (
     <footer>

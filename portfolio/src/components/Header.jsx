@@ -5,7 +5,6 @@ import { IoClose } from "react-icons/io5";
 export default forwardRef (function Header({aboutMeRef,serviceRef,projectRef,testimonialRef,contactRef},headerRef) {
     const [isActive,setIsActive] = useState(false)
     const [firstRender, setFirstRenderer] = useState(true)
-    const [isClicked,setIsClicked] =useState(false)
     const openNavbar = () =>{
         setIsActive(true)
         setFirstRenderer(false)        
@@ -23,6 +22,13 @@ export default forwardRef (function Header({aboutMeRef,serviceRef,projectRef,tes
                 block: "start"
             })
         }
+    }
+
+    const downloadPdf = () =>{
+        const link = document.createElement("a")
+        link.href = "/Abdulmusawir Alao_ Junior Full-Stack Developer_Resume.pdf"
+        link.download = "Abdulmusawir Alao_ Junior Full-Stack Developer_Resume.pdf"
+        link.click()
     }
 
     useEffect(()=>{
@@ -68,7 +74,7 @@ export default forwardRef (function Header({aboutMeRef,serviceRef,projectRef,tes
             <li onClick={()=>scrollToSection(projectRef)} className='hover:text-[#fd6d00] text-xs lg:text-base text-black dark:text-white cursor-pointer'>Projects</li>
             <li onClick={()=>scrollToSection(testimonialRef)} className='hover:text-[#fd6d00] text-xs lg:text-base text-black dark:text-white cursor-pointer'>Testimonials</li>
             <li onClick={()=>scrollToSection(contactRef)} className='hover:text-[#fd6d00] text-xs lg:text-base text-black dark:text-white cursor-pointer'>contact</li>
-            <button className='h-[32px] lg:h-[40px] w-[120px] lg:w-[140px] text-xs lg:text-base flex justify-center items-center text-white rounded-lg bg-[#fd6f00] hover:bg-white hover:text-[#fd6d00] hover:border hover:border-[#fd6d00] transition-all duration-500'>Download CV</button>
+            <button onClick={downloadPdf} className='h-[32px] lg:h-[40px] w-[120px] lg:w-[140px] text-xs lg:text-base flex justify-center items-center text-white rounded-lg bg-[#fd6f00] hover:bg-white hover:text-[#fd6d00] hover:border hover:border-[#fd6d00] transition-all duration-500'>Download CV</button>
         </ul>
       </nav>
       <FaBars onClick={openNavbar} className='block md:hidden text-3xl text-black dark:text-[#fd6d00]' />
@@ -86,7 +92,7 @@ export default forwardRef (function Header({aboutMeRef,serviceRef,projectRef,tes
             <li onClick={()=>{scrollToSection(testimonialRef);closeNavbar()}} className='text-center text-white py-2 border-b border-b-white'>Testimonials</li>
             <li onClick={()=>{scrollToSection(contactRef);closeNavbar()}} className='text-center text-white py-2 border-b border-b-white'>Contact</li>
             <div className='my-4 flex justify-center'>
-                <button className='w-[60%] py-2 rounded-lg text-[#fd6d00] bg-white'>Download CV</button>
+                <button onClick={downloadPdf} className='w-[60%] py-2 rounded-lg text-[#fd6d00] bg-white'>Download CV</button>
             </div>
       </ul>
     </header>
