@@ -9,3 +9,29 @@
   box-sizing: border-box;
   font-family: "Poppins", serif;
 }
+
+ul.active{
+  animation: moveDown 1s linear 1 forwards;
+}
+
+@keyframes moveDown {
+  from{
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+ul.inactive{
+  animation: moveUp 1s linear 1 forwards; 
+}
+
+@keyframes moveUp {
+  from{
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}

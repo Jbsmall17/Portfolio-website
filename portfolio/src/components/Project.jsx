@@ -6,10 +6,10 @@ import { BiExit  } from "react-icons/bi";
 export default function Project({image,name,desc,stack,sourceCode,liveServer}) {
   return (
     <div className=' max-w-[300px] w-full border border-[#ffebdb] rounded-lg'>
-      <div className='text-center bg-[#ffebdb] flex justify-center mb-2'>
-        <img className='rounded-tl-lg rounded-tr-lg block h-full w-full' src={image} />
+      <div className='text-center rounded-tl-lg rounded-tr-lg bg-[#ffebdb] flex justify-center'>
+        <img className='block rounded-tl-lg rounded-tr-lg block h-full w-full' src={image} />
       </div>
-      <div className='bg-[#f8f8f8] px-4 pt-2 pb-2'>
+      <div className='bg-[#f8f8f8] rounded-bl-lg rounded-br-lg px-4 pt-2 pb-2'>
         <p className='mb-2 text-xl font-semibold text-[#fd6f00]'>{name}</p>
          <p className='text-sm mb-2'>{desc}</p>
         <div className='mb-6 flex flex-row justify-between flex-wrap'>

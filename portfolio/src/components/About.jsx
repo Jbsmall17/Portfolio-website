@@ -11,6 +11,7 @@ const SkillSlider = styled(Slider)(({ theme }) => ({
     color: '#fd6f00',
     height: 5,
     padding: '15px 0',
+
     '& .MuiSlider-thumb': {
       height: 20,
       width: 20,
@@ -29,8 +30,11 @@ const SkillSlider = styled(Slider)(({ theme }) => ({
       },
     },
     '&.Mui-disabled':{
-        color: '#fd6f00',
-        padding: '12px 0'
+      color: '#fd6f00',
+      padding: '12px 0',
+      [theme.breakpoints.up('md')]: {
+        padding: '8px 0',
+      },
     },
     '& .MuiSlider-valueLabel': {
       fontSize: 12,
@@ -66,48 +70,48 @@ const SkillSlider = styled(Slider)(({ theme }) => ({
 
 export default function About() {
   return (
-    <section className='mb-20 flex flex-row items-center gap-20'>
-        <div className='w-[500px] h-[500px] rounded-full p-[4px] bg-gradient-to-b from-[#1A1A1A] to-[#fd6f00]'>
+    <section className='mb-10 md:mb-12 lg:mb-16 xl:mb-20 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-12 lg:gap-16 xl:gap-20'>
+        <div className='w-[300px] lg:w-[400px] xl:w-[500px] h-[300px] lg:h-[400px] xl:h-[500px] rounded-full p-[4px] bg-gradient-to-b from-[#1A1A1A] to-[#fd6f00]'>
           <img className='w-full h-full rounded-full' src={protrait1} alt='protriat image' />
         </div>
         <div className='flex-1'>
-            <p className='text-4xl font-semibold mb-4'>About Me</p>
-            <p className='mb-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam dolorum officia animi non qui natus eligendi magni earum nisi quisquam minus expedita id, deserunt voluptates officiis harum sequi nobis?</p>
-            <div className='grid grid-cols-2 gap-x-8'>
+            <p className='text-2xl lg:text-3xl xl:text-4xl text-center md:text-start text-black dark:text-white font-semibold mb-4'>About Me</p>
+            <p className='mb-2 text-sm lg:text-base text-center md:text-start font-light lg:font-normal text-black dark:text-white '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam dolorum officia animi non qui natus eligendi magni earum nisi quisquam minus expedita id, deserunt voluptates officiis harum sequi nobis?</p>
+            <div className='grid grid-cols-2 gap-x-4 lg:gap-x-6 xl:gap-x-8'>
                 <div>
-                    <p className='text-xl font-semibold'>Javascript</p>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Javascript</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
-                    <p className='text-xl font-semibold'>Typescript</p>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Typescript</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
-                    <p className='text-xl font-semibold'>React.js</p>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>React.js</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
-                    <p className='text-xl font-semibold'>Next.js</p>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Next.js</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
-                    <p className='text-xl font-semibold'>TailwindCss</p>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>TailwindCss</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
-                    <p className='text-xl font-semibold'>Node.js</p>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Node.js</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
-                    <p className='text-xl font-semibold'>Express.js</p>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Express.js</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
-                    <p className='text-xl font-semibold'>MongoDB</p>
+                    <p className='text-base lg:text-xl font-semibold'>MongoDB</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
-                    <p className='text-xl font-semibold'>GIT</p>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>GIT</p>
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
             </div>

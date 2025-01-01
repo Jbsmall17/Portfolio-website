@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 function App() {
 
   return (
-    <>
+    <main className="bg-white dark:bg-[#1e1e1e]">
       <Header />
       <main className='px-[5%]'>
       <Hero />
@@ -23,7 +23,7 @@ function App() {
       <Contact />
     </main>
       <Footer />
-    </>
+    </main>
   )
 }
 
