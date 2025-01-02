@@ -5,7 +5,7 @@ import { BiExit  } from "react-icons/bi";
 
 export default function Project({image,name,desc,stack,sourceCode,liveServer}) {
   return (
-    <div className=' max-w-[300px] w-full border border-[#ffebdb] rounded-lg'>
+    <div className='max-w-[300px] xl:flex-1 w-full border border-[#ffebdb] rounded-lg'>
       <div className='text-center rounded-tl-lg rounded-tr-lg bg-[#ffebdb] flex justify-center'>
         <img className='block rounded-tl-lg rounded-tr-lg block h-full w-full' src={image} />
       </div>

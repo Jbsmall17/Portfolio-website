@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="bg-white dark:bg-[#1e1e1e]">
       <Header ref={headerRef} aboutMeRef={aboutMeRef} serviceRef={serviceRef} projectRef={projectRef} testimonialRef={testimonialRef} contactRef={contactRef} />
-      <main className='px-[5%]'>
+      <main className='px-[4%]'>
       <Hero />
       <About ref={aboutMeRef} />
       <Services ref={serviceRef} />
