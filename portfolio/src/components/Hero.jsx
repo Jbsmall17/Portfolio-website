@@ -12,9 +12,11 @@ export default function Hero() {
             <p className='text-3xl lg:text-4xl xl:text-5xl text-black dark:text-white font-bold'>Fullstack</p>
             <p className='text-3xl lg:text-4xl xl:text-5xl text-black dark:text-white font-bold ml-0 md:ml-12 lg:ml-16 xl:ml-20 mb-4 lg:mb-6 xl:mb-8'>Developer</p>
             <p className='mb-4 text-sm lg:text-base text-center md:text-start font-light lg:font-normal text-black dark:text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae est aspernatur exercitationem saepe voluptatibus quia deserunt, necessitatibus vel, reprehenderit eum itaque dicta, a veritatis quis ea debitis alias. Quibusdam, adipisci!</p>
+            <a href='https://www.github.com/Jbsmall17' target="_blank">
             <button className='h-[32px] lg:h-[40px] w-[100px] lg:w-[105px] text-sm lg:text-base text-white bg-[#fd6f00] flex justify-center items-center rounded-sm hover:bg-white hover:text-[#fd6d00] hover:border hover:border-[#fd6d00] transition-all duration-500'>
                 Hire Me
             </button>
+            </a>
         </div>
         <div>
             <div className='w-[300px] lg:w-[400px] xl:w-[500px] h-[300px] lg:h-[400px] xl:h-[500px] rounded-full p-[4px] bg-gradient-to-b from-[#1A1A1A] to-[#fd6f00]'>

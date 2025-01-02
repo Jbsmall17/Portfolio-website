@@ -37,7 +37,7 @@ export default function Footer({aboutMeRef,serviceRef,projectRef,testimonialRef,
             </div>
         </div>
         <div className='bg-[#545454] dark:bg-[#121212] flex justify-center py-2 text-white'>
-            <p>&copyright; <span className='text-[#fd6d00] dark:text-white'>jibola</span> All Rights Reserved, inc.</p> 
+            <p>&copy; <span className='text-[#fd6d00] dark:text-white'>jibola</span> All Rights Reserved, inc.</p> 
         </div>
     </footer>
   )

@@ -3,7 +3,7 @@ import { FaQuoteLeft,FaQuoteRight } from "react-icons/fa";
 
 export default function Testimonial({image,content,name,position}) {
   return (
-    <div className='group py-6 px-4 rounded-lg bg-[#f8f8f8] hover:bg-[#fd6d00] shrink-0 max-w-[800px] w-[90%] flex flex-col md:flex-row gap-4 items-center transition-all duration-500'>
+    <div className='group py-6 px-4 rounded-lg bg-[#f8f8f8] hover:bg-[#fd6d00] shrink-0 max-w-[700px] xl:max-w-[800px] w-[90%] flex flex-col md:flex-row gap-4 items-center transition-all duration-500'>
       <div className='shrink-0 w-[75px] sm:w-[100px] md:w-[150px] lg:w-[200px] h-[75px] sm:h-[100px] md:h-[150px] lg:h-[200px]'>
         <img className='block w-full h-full' src={image} alt="people pics" />
       </div>
