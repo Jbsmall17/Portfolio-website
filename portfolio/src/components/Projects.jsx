@@ -21,7 +21,7 @@ export default forwardRef (function Projects(_,ref) {
             <li className='cursor-pointer hover:bg-[#fd6d00] hover:text-white py-1 px-2 rounded-lg border border-[#969696] bg-[#f8f8f8]'>Frontend</li>
             <li className='cursor-pointer hover:bg-[#fd6d00] hover:text-white py-1 px-2 rounded-lg border border-[#969696] bg-[#f8f8f8]'>Backend</li>
         </ul>
-        <div className='flex flex-row justify-center xl:justify-between flex-wrap gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-4'>
             <Project 
                 image={devlinks}
                 name={"Devlinks"}

@@ -10,7 +10,7 @@ export default function Project({image,name,desc,stack,sourceCode,liveServer}) {
       transition={{delay: 0.3,type: "tween", ease:"easeIn" }} 
       whileInView={{y:"0",opacity:1}}
       viewport={{once:true}}
-      className='max-w-[300px] w-full border border-[#ffebdb] rounded-lg self-start'>
+      className='w-full border border-[#ffebdb] rounded-lg self-start'>
       <div className='text-center rounded-tl-lg rounded-tr-lg bg-[#ffebdb] flex justify-center'>
         <img className='block rounded-tl-lg rounded-tr-lg block h-full w-full' src={image} />
       </div>
