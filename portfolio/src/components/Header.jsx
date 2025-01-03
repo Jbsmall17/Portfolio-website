@@ -2,7 +2,16 @@ import React, { forwardRef, useEffect, useState } from 'react'
 import Logo from './Logo';
 import { FaBars } from "react-icons/fa"
 import { IoClose } from "react-icons/io5";
+import { motion, useScroll, useSpring } from "motion/react"
+
+
 export default forwardRef (function Header({aboutMeRef,serviceRef,projectRef,testimonialRef,contactRef},headerRef) {
+    const { scrollYProgress } = useScroll();
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    })
     const [isActive,setIsActive] = useState(false)
     const [firstRender, setFirstRenderer] = useState(true)
     const openNavbar = () =>{
@@ -60,7 +69,8 @@ export default forwardRef (function Header({aboutMeRef,serviceRef,projectRef,tes
         }
     })
     return (
-    <header ref={headerRef} className={`z-10 w-full flex justify-between items-center px-[4%] py-2 top-0 left-0 sm:py-4 lg:py-6`}>
+    <header ref={headerRef} className={`z-10 w-full flex justify-between items-center px-[4%] py-2 relative sm:py-4 lg:py-6`}>
+      <motion.div style={{ scaleX, transformOrigin: 'left', y: '-7.5px' }} className='scroll h-[7.5px] w-full bg-[#fd6d00] absolute top-[100%] left-0'></motion.div>
       <Logo  />
       <nav className='hidden md:block'>
         <ul className='flex flex-row gap-2 lg:gap-4 xl:gap-8 items-center'>

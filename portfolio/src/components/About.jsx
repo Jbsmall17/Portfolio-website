@@ -1,9 +1,8 @@
 import React, { forwardRef } from 'react'
-import circularBorder from "../assets/image/Ellipse4.png"
 import protrait1 from "../assets/image/protrait1.png"
 import Slider from '@mui/material/Slider'
 import { styled } from '@mui/material/styles';
-
+import { motion } from 'motion/react';
 
 const iOSBoxShadow = '0 3px 1px rgba(0,0,0,0.1),0 4px 8px rgba(0,0,0,0.13),0 0 0 1px rgba(0,0,0,0.02)';
 
@@ -71,10 +70,23 @@ const SkillSlider = styled(Slider)(({ theme }) => ({
 export default forwardRef (function About(_,ref) {
   return (
     <section ref={ref} className='mb-10 md:mb-12 lg:mb-16 xl:mb-20 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-12 lg:gap-16 xl:gap-20'>
-        <div className='w-[300px] lg:w-[400px] xl:w-[500px] h-[300px] lg:h-[400px] xl:h-[500px] rounded-full p-[4px] bg-gradient-to-b from-[#1A1A1A] to-[#fd6f00]'>
-          <img className='w-full h-full rounded-full' src={protrait1} alt='protriat image' />
+        <div>
+          <motion.div
+            initial={{x:"-100%",opacity:0}}
+            transition={{delay: 0.5,duration: 0.5, type: "linear" }} 
+            whileInView={{x:"0",opacity:1}}
+            viewport={{once:true}}
+            className='w-[300px] lg:w-[400px] xl:w-[500px] h-[300px] lg:h-[400px] xl:h-[500px] rounded-full p-[4px] bg-gradient-to-b from-[#1A1A1A] to-[#fd6f00]'
+          >
+            <img className='w-full h-full rounded-full' src={protrait1} alt='protriat image' />
+          </motion.div>
         </div>
-        <div className='flex-1'>
+        <motion.div 
+          initial={{x:"100%",opacity:0}}
+          transition={{delay: 1,duration: 0.5, type: "linear" }} 
+          whileInView={{x:"0",opacity:1}}
+          viewport={{once:true}}
+          className='flex-1'>
             <p className='text-2xl lg:text-3xl xl:text-4xl text-center md:text-start text-black dark:text-white font-semibold mb-4'>About Me</p>
             <p className='mb-2 text-sm lg:text-base text-center md:text-start font-light lg:font-normal text-black dark:text-white '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam dolorum officia animi non qui natus eligendi magni earum nisi quisquam minus expedita id, deserunt voluptates officiis harum sequi nobis?</p>
             <div className='grid grid-cols-2 gap-x-4 lg:gap-x-6 xl:gap-x-8'>
@@ -115,7 +127,7 @@ export default forwardRef (function About(_,ref) {
                     <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
             </div>
-        </div>
+        </motion.div>
     </section>
   )
 })

@@ -1,11 +1,16 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
 import { BiExit  } from "react-icons/bi";
-
+import { motion } from 'motion/react';
 
 export default function Project({image,name,desc,stack,sourceCode,liveServer}) {
   return (
-    <div className='max-w-[300px] xl:flex-1 w-full border border-[#ffebdb] rounded-lg'>
+    <motion.div 
+      initial={{y:"15%",opacity:0}}
+      transition={{delay: 0.3,type: "tween", ease:"easeIn" }} 
+      whileInView={{y:"0",opacity:1}}
+      viewport={{once:true}}
+      className='max-w-[300px] xl:flex-1 w-full border border-[#ffebdb] rounded-lg'>
       <div className='text-center rounded-tl-lg rounded-tr-lg bg-[#ffebdb] flex justify-center'>
         <img className='block rounded-tl-lg rounded-tr-lg block h-full w-full' src={image} />
       </div>
@@ -42,6 +47,6 @@ export default function Project({image,name,desc,stack,sourceCode,liveServer}) {
             </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }

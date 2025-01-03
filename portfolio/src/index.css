@@ -13,7 +13,10 @@
 html{
   scroll-padding-top: 54px; 
 }
-
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
 @media screen and (min-width:768px) {
   html{
     scroll-padding-top: 74px;
@@ -55,10 +58,19 @@ ul.inactive{
 header{
   position: relative;
 }
+header .scroll{
+  display: none;
+}
+
 header.fixed{
   position: fixed;
   background-color: white;
-  border-bottom: 2px solid #fd6d00;
+  top:0;
+  left:0;
+  /* border-bottom: 2px solid #fd6d00; */
+}
+header.fixed .scroll{
+  display: block;
 }
 
 
@@ -67,17 +79,6 @@ header.fixed{
   justify-content: center;
 }
 
-/* .slick-slide:nth-of-type(2){
-  transform: translateX(450px) scale(0.9) !important;
-}
-
-.slick-slide:nth-of-type(3), .slick-slide:nth-of-type(4){
-  transform: translateX(-450px) scale(0.9) !important;
-}
-
-.slick-slide.slick-active{
-  transform: translateX(0) scale(1) !important;
-} */
 .slick-dots{
   bottom: -35px !important;
 }
@@ -199,4 +200,20 @@ header.fixed{
 div.slick-slide.slick-active{
   position: relative;
   z-index: 10;
+}
+
+.slick-prev:before, .slick-next:before{
+  color: #fd6d00 !important;
+}
+.slick-next{
+  right: -10px;
+}
+.slick-prev{
+  left: -10px
+}
+
+@media screen and (min-width: 768px) {
+  .slick-next, .slick-prev{
+    display: none !important;
+  }
 }
