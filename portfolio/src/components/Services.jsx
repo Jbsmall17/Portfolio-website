@@ -12,7 +12,7 @@ export default forwardRef(function Services(_,ref) {
         <p className='text-center text-black dark:text-white  font-light lg:font-normal text-sm lg:text-base mb-6 lg:mb-8'>
             I offer services including website development, web application creation, RESTful API design, e-commerce solutions, and ongoing maintenance and support.
         </p>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-center gap-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-center gap-4'>
             <Service 
                 icon={<AiOutlineGlobal className='text-4xl group-hover:text-black text-[#fd6f00]' />}
                 name={"Website"}

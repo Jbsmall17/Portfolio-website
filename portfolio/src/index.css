@@ -117,11 +117,13 @@ header.fixed .scroll{
     transform: translateX(-12.5%) scale(0.9) !important;
   }
   
-  div[data-index="0"][aria-hidden="true"] + div[data-index="1"][aria-hidden="true"]{
+  div[data-index="0"][aria-hidden="true"] + div[data-index="1"][aria-hidden="true"],div[data-index="1"][aria-hidden="true"] + div[data-index="2"][aria-hidden="true"],
+  div[data-index="2"][aria-hidden="true"] + div[data-index="3"][aria-hidden="true"], div[data-index="3"][aria-hidden="true"] + div[data-index="4"][aria-hidden="true"]{
     transform: translateX(12.5%) scale(0.9) !important;
   }
   
-  div[data-index="3"][aria-hidden="true"]{
+  div[data-index="3"][aria-hidden="true"], div[data-index="4"][aria-hidden="true"],
+  div[data-index="5"][aria-hidden="true"]{
     transform: translateX(-12.5%) scale(0.9) !important;
   }   
 }
@@ -140,11 +142,13 @@ header.fixed .scroll{
     transform: translateX(-15%) scale(0.9) !important;
   }
   
-  div[data-index="0"][aria-hidden="true"] + div[data-index="1"][aria-hidden="true"]{
+  div[data-index="0"][aria-hidden="true"] + div[data-index="1"][aria-hidden="true"],div[data-index="1"][aria-hidden="true"] + div[data-index="2"][aria-hidden="true"],
+  div[data-index="2"][aria-hidden="true"] + div[data-index="3"][aria-hidden="true"], div[data-index="3"][aria-hidden="true"] + div[data-index="4"][aria-hidden="true"]{
     transform: translateX(15%) scale(0.9) !important;
   }
   
-  div[data-index="3"][aria-hidden="true"]{
+  div[data-index="3"][aria-hidden="true"], div[data-index="4"][aria-hidden="true"],
+  div[data-index="5"][aria-hidden="true"]{
     transform: translateX(-15%) scale(0.9) !important;
   }
 }
@@ -159,15 +163,17 @@ header.fixed .scroll{
   div[data-index="0"][aria-hidden="true"]{
     transform: translateX(215px) scale(0.9) !important;
   }
-  div[data-index="2"][aria-hidden="true"]{
+  div[data-index="2"][aria-hidden="true"], div[data-index="4"][aria-hidden="true"]{
     transform: translateX(-215px) scale(0.9) !important;
   }
   
-  div[data-index="0"][aria-hidden="true"] + div[data-index="1"][aria-hidden="true"]{
+  div[data-index="0"][aria-hidden="true"] + div[data-index="1"][aria-hidden="true"], div[data-index="1"][aria-hidden="true"] + div[data-index="2"][aria-hidden="true"],
+  div[data-index="2"][aria-hidden="true"] + div[data-index="3"][aria-hidden="true"], div[data-index="3"][aria-hidden="true"] + div[data-index="4"][aria-hidden="true"]{
     transform: translateX(215px) scale(0.9) !important;
   }
   
-  div[data-index="3"][aria-hidden="true"]{
+  div[data-index="3"][aria-hidden="true"],div[data-index="4"][aria-hidden="true"],
+  div[data-index="5"][aria-hidden="true"]{
     transform: translateX(-215px) scale(0.9) !important;
   }  
 }
@@ -186,14 +192,14 @@ header.fixed .scroll{
     transform: translateX(-375px) scale(0.9) !important;
   }
   
-  div[data-index="0"][aria-hidden="true"] + div[data-index="1"][aria-hidden="true"]{
+  div[data-index="0"][aria-hidden="true"] + div[data-index="1"][aria-hidden="true"], div[data-index="1"][aria-hidden="true"] + div[data-index="2"][aria-hidden="true"],
+  div[data-index="2"][aria-hidden="true"] + div[data-index="3"][aria-hidden="true"],div[data-index="3"][aria-hidden="true"] + div[data-index="4"][aria-hidden="true"]{
     transform: translateX(375px) scale(0.9) !important;
-  }
-  
-  div[data-index="3"][aria-hidden="true"]{
-    transform: translateX(-375px) scale(0.9) !important;
   } 
-    
+  div[data-index="3"][aria-hidden="true"], div[data-index="4"][aria-hidden="true"],
+  div[data-index="5"][aria-hidden="true"]{
+    transform: translateX(-375px) scale(0.9) !important;
+  }
 }
 
 

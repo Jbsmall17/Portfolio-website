@@ -4,6 +4,7 @@ import Testimonial from './Testimonial'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { testimonials } from '../data/data';
 
 export default forwardRef(function Testimonials(_,ref) {
     let settings = {
@@ -23,24 +24,20 @@ export default forwardRef(function Testimonials(_,ref) {
             Here are testimonials from professionals I’ve collaborated with in the tech space during my years of practice.
         </p>
         <Slider {...settings}>
-            <Testimonial 
-                image={image}
-                content={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nihil error facilis iure facere similique obcaecati earum laborum aliquid sequi enim eaque blanditiis, id cupiditate, fugiat reprehenderit, illum eveniet neque."}
-                name={"Name"}
-                position={"CEO"}
-            />
-            <Testimonial 
-                image={image}
-                content={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nihil error facilis iure facere similique obcaecati earum laborum aliquid sequi enim eaque blanditiis, id cupiditate, fugiat reprehenderit, illum eveniet neque."}
-                name={"Name"}
-                position={"CEO"}
-            />
-            <Testimonial 
-                image={image}
-                content={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo nihil error facilis iure facere similique obcaecati earum laborum aliquid sequi enim eaque blanditiis, id cupiditate, fugiat reprehenderit, illum eveniet neque."}
-                name={"Name"}
-                position={"CEO"}
-            />
+            {
+                testimonials.map(({name,companyName,position,picture,testimonial},idx)=>{
+                    return (
+                        <Testimonial
+                            key={idx}
+                            image={picture}
+                            content={testimonial}
+                            name={name}
+                            position={position}
+                            company={companyName}
+                        />
+                    )
+                })
+            }
         </Slider>
     </section>
   )

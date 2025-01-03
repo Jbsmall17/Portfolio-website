@@ -64,3 +64,48 @@ export const data = [
     
     }
 ]
+
+export const testimonials = [
+    {
+        name: "Micheal Ogundero",
+        companyName: "Wellnite",
+        position: "Senior Software Engineer",
+        picture: "/micheal.jpg",
+        testimonial: "Jibola is very hardworking and dependable. He is very determined and never gets complacent. My experience with him has been quite good and would hire him again if I get the chance."
+    },
+    {
+        name: "Temitoyosi Osibemekun",
+        companyName: "MidroHub",
+        position: "General Manager",
+        picture: "/yosi.jpg",
+        testimonial: "Working with Ajibola Alao has been an exceptional experience. His insatiable curiosity and drive to continuously learn and grow make him a force to be reckoned with. Ajibola approaches every challenge with a creative mindset and a commitment to excellence, ensuring that his work stands out. His ability to collaborate effectively and deliver outstanding results makes him an invaluable asset to any team. I am confident that his talents and determination will continue to drive success in all his endeavors."
+    },
+    {
+        name: "Olayinka D. Adeyefa",
+        companyName: "Axel Cyber",
+        position: "Product Manager",
+        picture: "",
+        testimonial: "Jibola Alao has been an Amazing Asset and we definitely look to him as one of the more experienced and professional developers on the team. He is capable of high level front-end development and also a very reliable team member with excellent communication as well as Self Management."
+    },
+    {
+        name: "Ibiyeye Oladimeji Jubril",
+        companyName: "Dimplat Tech",
+        position: "Director of Admissions",
+        picture: "/dimeji.jpg",
+        testimonial: "He's a good person to work with, he has a very good team spirit and knows how to handle pressure."
+    },
+    {
+        name: "Abimbola Akintewe",
+        companyName: "IT telecoms",
+        position: "Project manager",
+        picture: "",
+        testimonial: "Jibola is a very dedicated developer, I have worked with him for over 2 years and I can say he is proactive and reliable. It's one thing to just build and it's another to make effort to understand and improve what you are building and Jibola is exactly that kind of developer."
+    },
+    {
+        name: "Tolulope Shaola",
+        companyName: "GrowMeOrganic",
+        position: "Product Designer",
+        picture: "",
+        testimonial: "I've had the opportunity to work with Jibola a couple times and each experience has been nothing short of smooth. He’s an excellent communicator and ensures pixel-perfect designs. From the outset, he demonstrates exceptional communication skills, always keeping me informed at every stage of the project. This clear and consistent communication makes working with him enjoyable, as he's quick to address questions and provide feedback."    
+    }
+] 
