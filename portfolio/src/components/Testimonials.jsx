@@ -19,7 +19,9 @@ export default forwardRef(function Testimonials(_,ref) {
   return (
     <section ref={ref} className='mb-20'>
         <p className='text-center text-4xl text-black dark:text-white font-bold mb-4'>Testimonials</p>
-        <p className='text-center text-black dark:text-white mb-12'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur error assumenda hic mollitia esse cumque sunt incidunt illum, velit est temporibus quaerat enim eum ipsum, exercitationem voluptatum tempore, necessitatibus atque.</p>
+        <p className='text-center text-black dark:text-white mb-12'>
+            Here are testimonials from professionals I’ve collaborated with in the tech space during my years of practice.
+        </p>
         <Slider {...settings}>
             <Testimonial 
                 image={image}

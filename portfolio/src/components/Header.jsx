@@ -42,7 +42,6 @@ export default forwardRef (function Header({aboutMeRef,serviceRef,projectRef,tes
 
     useEffect(()=>{
         const scrollDistance = () =>{
-            // console.log(window.scrollY)
             if(headerRef.current){
                 if(window.scrollY > 50){
                     headerRef.current.classList.add("fixed")
@@ -58,7 +57,6 @@ export default forwardRef (function Header({aboutMeRef,serviceRef,projectRef,tes
     },[])
 
     useEffect(()=>{
-        console.log(window.innerWidth)
         const resizeHandler = ()=>{
             if(window.innerWidth < 768)
             setFirstRenderer(true)

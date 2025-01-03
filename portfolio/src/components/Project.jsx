@@ -10,14 +10,14 @@ export default function Project({image,name,desc,stack,sourceCode,liveServer}) {
       transition={{delay: 0.3,type: "tween", ease:"easeIn" }} 
       whileInView={{y:"0",opacity:1}}
       viewport={{once:true}}
-      className='max-w-[300px] xl:flex-1 w-full border border-[#ffebdb] rounded-lg'>
+      className='max-w-[300px] w-full border border-[#ffebdb] rounded-lg self-start'>
       <div className='text-center rounded-tl-lg rounded-tr-lg bg-[#ffebdb] flex justify-center'>
         <img className='block rounded-tl-lg rounded-tr-lg block h-full w-full' src={image} />
       </div>
       <div className='bg-[#f8f8f8] rounded-bl-lg rounded-br-lg px-4 pt-2 pb-2'>
         <p className='mb-2 text-xl font-semibold text-[#fd6f00]'>{name}</p>
-        <p className='text-sm mb-2'>{desc}</p>
-        <div className='mb-6 flex flex-row justify-center gap-1 flex-wrap'>
+        <p className='text-sm mb-2 min-h-[80px]'>{desc}</p>
+        <div className='mb-6 flex flex-row justify-start gap-1 flex-wrap'>
             {
                 stack.map((tech,idx)=>{
                     return <div key={idx} className='bg-[#fd6f00] text-white text-sm py-1 px-2 rounded-full'>{tech}</div>

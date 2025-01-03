@@ -88,7 +88,9 @@ export default forwardRef (function About(_,ref) {
           viewport={{once:true}}
           className='flex-1'>
             <p className='text-2xl lg:text-3xl xl:text-4xl text-center md:text-start text-black dark:text-white font-semibold mb-4'>About Me</p>
-            <p className='mb-2 text-sm lg:text-base text-center md:text-start font-light lg:font-normal text-black dark:text-white '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab veniam dolorum officia animi non qui natus eligendi magni earum nisi quisquam minus expedita id, deserunt voluptates officiis harum sequi nobis?</p>
+            <p className='mb-2 text-sm lg:text-base text-center md:text-start font-light lg:font-normal text-black dark:text-white '>
+              I'm a web developer skilled in HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express, and Git, creating responsive designs and efficient backend systems for impactful digital experiences.
+            </p>
             <div className='grid grid-cols-2 gap-x-4 lg:gap-x-6 xl:gap-x-8'>
                 <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Javascript</p>

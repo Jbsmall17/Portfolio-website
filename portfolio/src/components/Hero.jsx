@@ -13,8 +13,11 @@ export default function Hero() {
             className='flex-1 flex flex-col items-center md:items-start'>
             <p className='text-base text-center md:text-start lg:text-xl text-black dark:text-white font-semibold'>Hi I am <br /><span className='text-[#fd6f00]'>Alao Abdulmusawwir Ajibola</span></p>
             <p className='text-3xl lg:text-4xl xl:text-5xl text-black dark:text-white font-bold'>Fullstack</p>
-            <p className='text-3xl lg:text-4xl xl:text-5xl text-black dark:text-white font-bold ml-0 md:ml-12 lg:ml-16 xl:ml-20 mb-4 lg:mb-6 xl:mb-8'>Developer</p>
-            <p className='mb-4 text-sm lg:text-base text-center md:text-start font-light lg:font-normal text-black dark:text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae est aspernatur exercitationem saepe voluptatibus quia deserunt, necessitatibus vel, reprehenderit eum itaque dicta, a veritatis quis ea debitis alias. Quibusdam, adipisci!</p>
+            <p className='text-3xl lg:text-4xl xl:text-5xl text-black dark:text-white font-bold ml-0 md:ml-12 lg:ml-16 xl:ml-20 mb-4 lg:mb-4 xl:mb-6'>Developer</p>
+            <p className='mb-4 text-sm lg:text-base text-center md:text-start font-light lg:font-normal text-black dark:text-white'>
+                A skilled MERN stack developer with 3 years of experience crafting visually stunning websites and dynamic web applications that bring brand stories to life. 
+                I excel at building robust, efficient servers to power the logic and functionality behind seamless operations
+            </p>
             <a href='https://www.github.com/Jbsmall17' target="_blank">
             <button className='h-[32px] lg:h-[40px] w-[100px] lg:w-[105px] text-sm lg:text-base text-white bg-[#fd6f00] flex justify-center items-center rounded-sm hover:bg-white hover:text-[#fd6d00] hover:border hover:border-[#fd6d00] transition-all duration-500'>
                 Hire Me
