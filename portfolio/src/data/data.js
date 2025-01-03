@@ -47,7 +47,7 @@ export const data = [
     {
         name: "Desserts e-commerce",
         desc: "An e-commerce website for desserts with elegant design, easy navigation, and a seamless shopping experience.",
-        stack: ["React.js, Javascript", "TailwindCss"],
+        stack: ["React.js","Javascript","TailwindCss"],
         imagePreview: "/desserts-ecommerce-preview.png",
         sourceCode: "https://github.com/Jbsmall17/dessert-app",
         liveServer: "https://dessert-app-flax.vercel.app/",
