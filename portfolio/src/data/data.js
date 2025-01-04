@@ -2,7 +2,7 @@ export const data = [
     {
         name: "Devlinks",
         desc: "A web app for storing and sharing links with preview pages, enabling easy sharing with friends, family, or employers.",
-        stack: ["React.js","Typescript","TailwindCss","Express.js", "MongoDB"],
+        stack: ["React.js","Typescript","Tailwind CSS","Express.js", "MongoDB"],
         imagePreview: "/devlinks-preview.png",
         sourceCode:"https://github.com/Jbsmall17/link-sharing-webapp",
         liveServer:"https://link-sharing-webapp.vercel.app/",
@@ -11,7 +11,7 @@ export const data = [
     {
         name: "Dimplattech",
         desc: "Dimplattech's website is a multi-page platform with sleek animations and seamless transitions for an engaging user experience.",
-        stack: ["Next.js","Typescript","TailwindCss","Firebase"],
+        stack: ["Next.js","Typescript","Tailwind CSS","Firebase"],
         imagePreview: "/dimplattech-preview.png",
         sourceCode: "https://github.com/Jbsmall17/dimplattech",
         liveServer: "https://dimplattech.vercel.app/",
@@ -20,7 +20,7 @@ export const data = [
     {
        name: "Partypal",
        desc: "Partypal is a comprehensive event planning platform that simplifies the process of connecting event planners with vendor",
-       stack: ["React.js","Typescript","TailwindCss"],
+       stack: ["React.js","Typescript","Tailwind CSS"],
        imagePreview: "/partypal-preview.png",
        sourceCode: "https://github.com/Jbsmall17/Blogging_API",
        liveServer: "https://blog-api-ljcf.onrender.com/",
@@ -47,7 +47,7 @@ export const data = [
     {
         name: "Desserts e-commerce",
         desc: "An e-commerce website for desserts with elegant design, easy navigation, and a seamless shopping experience.",
-        stack: ["React.js","Javascript","TailwindCss"],
+        stack: ["React.js","Javascript","Tailwind CSS"],
         imagePreview: "/desserts-ecommerce-preview.png",
         sourceCode: "https://github.com/Jbsmall17/dessert-app",
         liveServer: "https://dessert-app-flax.vercel.app/",
@@ -62,6 +62,15 @@ export const data = [
         liveServer: "https://jbsmall17.github.io/thank-you-card-generator/",
         type: "Frontend"
     
+    },
+    {
+        name: "Portfolio",
+        desc: "This is a portfolio website designed to highlight my skills, career progression, and showcased projects.",
+        stack: ["React.js", "Javascript", "Tailwind CSS"],
+        imagePreview: "/portfolio-preview.png",
+        sourceCode: "https://github.com/Jbsmall17/Portfolio-website",
+        liveServer: "https://www.jibolaalao.tech/",
+        type: "Frontend"
     }
 ]
 
@@ -107,5 +116,11 @@ export const testimonials = [
         position: "Product Designer",
         picture: "",
         testimonial: "I've had the opportunity to work with Jibola a couple times and each experience has been nothing short of smooth. He’s an excellent communicator and ensures pixel-perfect designs. From the outset, he demonstrates exceptional communication skills, always keeping me informed at every stage of the project. This clear and consistent communication makes working with him enjoyable, as he's quick to address questions and provide feedback."    
+    },{
+        name: "Olayinka Salisu",
+        companyName: "The 4th Media and Entertainment",
+        position: "CEO",
+        picture: "/rofeeq.jpg",
+        testimonial: "My experience with you was quite seamless, perfect job done and great customer support and it’s great putting me through certain things to navigate and optimize the website"
     }
 ] 
