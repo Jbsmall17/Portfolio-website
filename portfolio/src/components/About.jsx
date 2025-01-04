@@ -73,7 +73,7 @@ export default forwardRef (function About(_,ref) {
         <div>
           <motion.div
             initial={{x:"-100%",opacity:0}}
-            transition={{delay: 0.5,duration: 0.5, type: "linear" }} 
+            transition={{delay: 0.3,duration: 0.5, type: "linear" }} 
             whileInView={{x:"0",opacity:1}}
             viewport={{once:true}}
             className='w-[300px] lg:w-[400px] xl:w-[500px] h-[300px] lg:h-[400px] xl:h-[500px] rounded-full p-[4px] bg-gradient-to-b from-[#1A1A1A] to-[#fd6f00]'
@@ -83,7 +83,7 @@ export default forwardRef (function About(_,ref) {
         </div>
         <motion.div 
           initial={{x:"100%",opacity:0}}
-          transition={{delay: 1,duration: 0.5, type: "linear" }} 
+          transition={{delay: 0.8,duration: 0.5, type: "linear" }} 
           whileInView={{x:"0",opacity:1}}
           viewport={{once:true}}
           className='flex-1'>
@@ -93,40 +93,48 @@ export default forwardRef (function About(_,ref) {
             </p>
             <div className='grid grid-cols-2 gap-x-4 lg:gap-x-6 xl:gap-x-8'>
                 <div>
+                  <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>HTML</p>
+                  <SkillSlider disabled defaultValue={95} aria-label="Default" valueLabelDisplay="auto" />
+                </div>
+                <div>
+                    <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>CSS</p>
+                    <SkillSlider disabled defaultValue={85} aria-label="Default" valueLabelDisplay="auto" />
+                </div>
+                <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Javascript</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={85} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Typescript</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={75} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>React.js</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={90} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Next.js</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={85} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>TailwindCss</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={90} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Node.js</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={80} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>Express.js</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={80} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
                     <p className='text-base lg:text-xl font-semibold'>MongoDB</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={80} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
                 <div>
                     <p className='text-base lg:text-xl text-black dark:text-white font-semibold'>GIT</p>
-                    <SkillSlider disabled defaultValue={70} aria-label="Default" valueLabelDisplay="auto" />
+                    <SkillSlider disabled defaultValue={80} aria-label="Default" valueLabelDisplay="auto" />
                 </div>
             </div>
         </motion.div>
