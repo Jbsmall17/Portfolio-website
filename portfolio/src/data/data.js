@@ -22,8 +22,8 @@ export const data = [
        desc: "Partypal is a comprehensive event planning platform that simplifies the process of connecting event planners with vendor",
        stack: ["React.js","Typescript","Tailwind CSS"],
        imagePreview: "/partypal-preview.png",
-       sourceCode: "https://github.com/Jbsmall17/Blogging_API",
-       liveServer: "https://blog-api-ljcf.onrender.com/",
+       sourceCode: "https://github.com/midrohuborg/PartyPal",
+       liveServer: "https://www.partypalnow.com",
        type: "Frontend"
     },
     {

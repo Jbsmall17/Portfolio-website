@@ -25,16 +25,20 @@ export default function Project({image,name,desc,stack,sourceCode,liveServer}) {
             }
         </div>
         <div className='flex flex-row gap-6 items-center mb-4'>
-            <a
+            {
+              name != "Partypal"
+              &&
+              <a
                 href={sourceCode}
                 target='_blank'
                 className="cursor-pointer group flex items-center text-blue-500 transition-colors duration-200"
-            >
+              >
                 <span className="text-sm group-hover:text-blue-700 transition-colors duration-200">
                     Source Code
                 </span>
                 <FaGithub className="ml-2 text-xl group-hover:text-blue-700 group-hover:scale-110 transition-all duration-200" />
-            </a>
+              </a>
+            }
             <a
                 href={liveServer}
                 target='_blank'
